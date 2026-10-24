@@ -15,9 +15,10 @@ for the frozen extension decision. The next recommended research phase is
 Phase 8R6A, an external/later dataset provenance and overlap audit; it has not
 started.
 
-See [Running and Testing Guide](docs/RUN_AND_TEST_GUIDE.md) for the complete
-setup, phase-by-phase execution, notebook, testing, reproducibility, and do/don't
-instructions.
+See [Project Instructions](docs/PROJECT_INSTRUCTIONS.md) for the main setup,
+usage, phase execution, testing, reproducibility, security, and troubleshooting
+instructions. The more detailed [Running and Testing Guide](docs/RUN_AND_TEST_GUIDE.md)
+covers the complete phase-by-phase execution protocol.
 
 ## Local Setup
 
