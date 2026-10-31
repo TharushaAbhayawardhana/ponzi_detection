@@ -1,0 +1,11 @@
+{
+  "address_match": true,
+  "block_reconciled": true,
+  "historical_query_supported": true,
+  "opcode_derived": true,
+  "receipt_match": true,
+  "requests": 6,
+  "runtime_nonempty": true,
+  "status": "PASS",
+  "timestamp_available": true
+}
