@@ -1,6 +1,6 @@
 {
   "experiment": "random_stratified_static_opcode_three_viewer",
-  "dataset": "C:\\Users\\ASUS\\Documents\\GitHub\\mulcas-ethereum-ponzi-detection\\data\\raw\\PonziDataset_20221114.csv",
+  "dataset": "D:\\Campus\\UNI DOC\\4th Year\\Research\\Codebase\\ponzi-detection\\data\\raw\\PonziDataset_20221114.csv",
   "seed": 42,
   "split_counts": {
     "train": {
@@ -27,10 +27,10 @@
   "xgboost_count": {
     "best_params": {
       "model__learning_rate": 0.1,
-      "model__max_depth": 5,
+      "model__max_depth": 7,
       "model__n_estimators": 100
     },
-    "cv_f1": 0.7518562897029176
+    "cv_f1": 0.7522754882721241
   },
   "xgboost_tfidf": {
     "best_params": {
@@ -38,46 +38,46 @@
       "model__max_depth": 3,
       "model__n_estimators": 100
     },
-    "cv_f1": 0.7790525667434064
+    "cv_f1": 0.7786672984284925
   },
-  "validation_optimal_f1": 0.8823529411764707,
+  "validation_optimal_f1": 0.888888888888889,
   "test": {
-    "threshold": 0.39088033297408625,
-    "tn": 1230,
-    "fp": 7,
-    "fn": 10,
-    "tp": 53,
-    "accuracy": 0.9869230769230769,
-    "balanced_accuracy": 0.9178054946042011,
-    "precision": 0.8833333333333333,
-    "recall": 0.8412698412698413,
-    "f1": 0.8617886178861789,
-    "pr_auc_trapezoidal": 0.8836950397145659,
-    "average_precision": 0.883321656015283,
+    "threshold": 0.49207768642264954,
+    "tn": 1232,
+    "fp": 5,
+    "fn": 11,
+    "tp": 52,
+    "accuracy": 0.9876923076923076,
+    "balanced_accuracy": 0.9106773941050417,
+    "precision": 0.9122807017543859,
+    "recall": 0.8253968253968254,
+    "f1": 0.8666666666666667,
+    "pr_auc_trapezoidal": 0.8776621150634071,
+    "average_precision": 0.8773751657104414,
     "classification_report": {
       "Benign": {
-        "precision": 0.9919354838709677,
-        "recall": 0.994341147938561,
-        "f1-score": 0.9931368591037545,
+        "precision": 0.9911504424778761,
+        "recall": 0.9959579628132579,
+        "f1-score": 0.9935483870967742,
         "support": 1237.0
       },
       "Ponzi": {
-        "precision": 0.8833333333333333,
-        "recall": 0.8412698412698413,
-        "f1-score": 0.8617886178861789,
+        "precision": 0.9122807017543859,
+        "recall": 0.8253968253968254,
+        "f1-score": 0.8666666666666667,
         "support": 63.0
       },
-      "accuracy": 0.9869230769230769,
+      "accuracy": 0.9876923076923076,
       "macro avg": {
-        "precision": 0.9376344086021505,
-        "recall": 0.9178054946042011,
-        "f1-score": 0.9274627384949667,
+        "precision": 0.951715572116131,
+        "recall": 0.9106773941050417,
+        "f1-score": 0.9301075268817205,
         "support": 1300.0
       },
       "weighted avg": {
-        "precision": 0.9866724565756825,
-        "recall": 0.9869230769230769,
-        "f1-score": 0.9867715212601336,
+        "precision": 0.987328293504353,
+        "recall": 0.9876923076923076,
+        "f1-score": 0.9873995037220843,
         "support": 1300.0
       }
     }
@@ -102,12 +102,12 @@
         "pr_auc": 0.6624476140288026
       },
       "New random-split test": {
-        "accuracy": 0.9869230769230769,
-        "balanced_accuracy": 0.9178054946042011,
-        "precision": 0.8833333333333333,
-        "recall": 0.8412698412698413,
-        "f1": 0.8617886178861789,
-        "pr_auc": 0.883321656015283
+        "accuracy": 0.9876923076923076,
+        "balanced_accuracy": 0.9106773941050417,
+        "precision": 0.9122807017543859,
+        "recall": 0.8253968253968254,
+        "f1": 0.8666666666666667,
+        "pr_auc": 0.8773751657104414
       }
     },
     "confusion_matrices": {
@@ -118,19 +118,19 @@
         "tp": 29
       },
       "New random-split test": {
-        "tn": 1230,
-        "fp": 7,
-        "fn": 10,
-        "tp": 53
+        "tn": 1232,
+        "fp": 5,
+        "fn": 11,
+        "tp": 52
       }
     },
     "new_minus_old_percentage_points": {
-      "accuracy": 6.157926552818493,
-      "balanced_accuracy": 19.46137811210551,
-      "precision": -2.2916666666666696,
-      "recall": 38.81448412698413,
-      "f1": 25.762195121951226,
-      "pr_auc": 22.08740419864804
+      "accuracy": 6.234849629741568,
+      "balanced_accuracy": 18.748568062189563,
+      "precision": 0.6030701754385914,
+      "recall": 37.22718253968254,
+      "f1": 26.250000000000007,
+      "pr_auc": 21.492755168163878
     }
   }
 }

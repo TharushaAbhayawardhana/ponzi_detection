@@ -114,9 +114,9 @@ def test_recorded_result_and_comparison_inputs_exist() -> None:
     assert result["experiment"] == "random_stratified_static_opcode_three_viewer"
     assert result["seed"] == 42
     assert result["train_test_shared_addresses"] == 3
-    assert result["test"]["precision"] == pytest.approx(0.8833333333333333)
-    assert result["test"]["recall"] == pytest.approx(0.8412698412698413)
-    assert result["test"]["f1"] == pytest.approx(0.8617886178861789)
+    assert result["test"]["precision"] == pytest.approx(0.9122807017543859)
+    assert result["test"]["recall"] == pytest.approx(0.8253968253968254)
+    assert result["test"]["f1"] == pytest.approx(0.8666666666666667)
 
 
 # Hash the ignored raw CSV only when it is present in the local workspace.
@@ -132,4 +132,3 @@ def test_local_raw_dataset_hash_is_unchanged() -> None:
             digest.update(chunk)
 
     assert digest.hexdigest() == EXPECTED_DATASET_SHA256
-
